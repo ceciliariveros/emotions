@@ -2,12 +2,11 @@ import "./NavBar.css";
 import logoImg from './../assets/img/emotions2.png';
 
 const NavBar = () => {
-    let ruta= '#'
   return (
         <nav className="container">    
-            <div className="brand_logo">
+            <a className="brand_logo" href="home">
                <img src={logoImg} alt='logo Emotions' />
-            </div> 
+            </a> 
             <ul>
                 <li>
                     <a className="menu_items" href="home">Inicio</a>
