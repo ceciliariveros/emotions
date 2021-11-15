@@ -1,8 +1,12 @@
-import NavBar from "./components/NavBar";
+import NavBar from "./components/NavBar/NavBar";
+import ItemListContainer from "./components/itemListContainer/ItemListContainer"
 
 function App() {
     return (
-        <NavBar />
+        <>
+            <NavBar />
+            <ItemListContainer greeting="Bienvenido a Emotions e-commerce!"/>
+        </>
     );
 }
 

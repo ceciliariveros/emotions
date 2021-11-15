@@ -1,7 +1,9 @@
 .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 0px;
+    padding-right: 15px;
     background-color: rgb(94, 105, 143);
   }
   
@@ -30,6 +32,9 @@
   .menu_items:hover{
       text-decoration: underline;
       font-size: 1.32rem;
+  }
+  CartWidget{
+   padding-right:15px ;
   }
 
   @media (max-width: 700px) {

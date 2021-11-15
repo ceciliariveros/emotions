@@ -1,0 +1,8 @@
+.cartelGreeting{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(48, 48, 80);
+    font-size: 2rem;
+    font-weight: 600;
+}
