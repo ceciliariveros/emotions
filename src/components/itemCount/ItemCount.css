@@ -12,6 +12,15 @@
     justify-content: center;
 }
 
-.buttonAgregar{
+.buttonAgregar,.buttonQuitar{
+    color: white;
+    padding: 10px 5px;
+    border-radius:8px ;
     margin-right: 10px !important;
+}
+.buttonAgregar{
+    background-color: green;
+}
+.buttonQuitar{
+    background-color: red;
 }
