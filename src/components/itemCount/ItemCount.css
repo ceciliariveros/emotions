@@ -1,0 +1,17 @@
+.contenedorCouter{
+    margin-top: 50;
+    display: flex;
+    justify-content: center;
+}
+.title,.textStock{
+    text-align: center;
+}
+
+.groupButton{
+    display: flex;
+    justify-content: center;
+}
+
+.buttonAgregar{
+    margin-right: 10px !important;
+}
