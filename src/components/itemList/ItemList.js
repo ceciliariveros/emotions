@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import './ItemList.css';
 import Item from '../item/Item'
+
 const ItemList = () => {
 	const [items, setItems] = useState([]);
 
@@ -29,7 +30,7 @@ const ItemList = () => {
         },
     ]
 
-    const datos = new Promise((resolve) => {
+    let datos = new Promise((resolve) => {
         setTimeout(()=>{
             resolve(arrayItems)
         },2000)
@@ -37,12 +38,10 @@ const ItemList = () => {
 
     
 	useEffect(() => {
-            datos.then((response) => 
-                response.json())
-            datos.then((json) => setItems(json));
-  
-		
-	}, []);
+        datos.then((response) => 
+            response.json())
+        datos.then((json) => setItems(json));	
+	}, [datos]);
 
 	return (
 		<div className='itemList'>
