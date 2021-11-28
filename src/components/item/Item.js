@@ -4,7 +4,7 @@ import { Card, Image } from 'semantic-ui-react';
 import './Item.css'
 
 const Item = ({ data }) => (
-        <Card className="contenedor">
+        <Card style={{margin:30}}>
             <Image src={data.picture_url} wrapped ui={false} />
             <Card.Content>
                 <Card.Header>{data.title}</Card.Header>

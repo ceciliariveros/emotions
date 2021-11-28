@@ -1,6 +1,6 @@
 import React from 'react'
 import './itemListContainer.css'
-import ItemCount from "../itemCount/ItemCount"
+//import ItemCount from "../itemCount/ItemCount"
 import ItemList from '../itemList/ItemList'
 
 
