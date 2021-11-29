@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import './ItemList.css';
 import Item from '../item/Item'
+
 const arrayItems =[
     {
         id: 1,
@@ -28,27 +29,40 @@ const arrayItems =[
 
 const ItemList = () => {
 	const [items, setItems] = useState([]);
+    const [loading, setLoading] = useState(true)
 
     
 	useEffect(() => {
+        setLoading(true)
         const datos = new Promise((resolve) => {
             setTimeout(()=>{
                 resolve(arrayItems)
-            },3000)
+            },2000)
         })   
             
-        datos.then((response) => setItems(response));
+        datos.then((response) => {
+            setItems(response);
+            setLoading(false)
+        });
 		
 	}, []);
 
 	return (
 		<div className='itemList'>
-			<h1>Item list</h1>
-			<div className='Item'>
+			<h1>Categoria de Porducto</h1>
+            {
+                loading ?
+              
+                <h5>Cargando productos...</h5>
+                 
+                :
+                <div className='Item'>
 				{items.map((item) => {
 					return <Item data={item} key={item.id} />;
 				})}
 			</div>
+
+            }
 		</div>
 	);
 };
