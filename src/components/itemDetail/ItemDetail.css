@@ -1,0 +1,13 @@
+.contenedor{
+    display: flex;
+    justify-content: center;
+}
+.cardItem{
+    width: 250px;
+    margin: 30px;
+   
+}
+.imgCard{
+    width: 200px;
+    text-align: center;
+}

@@ -1,26 +1,30 @@
 import "./NavBar.css";
 import logoImg from './../../assets/img/emotions2.png';
 import CartWidget from '../cartWidgets/CartWidget'
+import {NavLink} from 'react-router-dom'
 
 const NavBar = () => {
   return (
         <nav className="container">
-            <a className="brand_logo" href="home">
-               <img src={logoImg} alt='logo Emotions' />
-            </a> 
+            <NavLink  to="/" className="brand_logo" >
+               <img src={logoImg} alt='Logo principal de ecommerce' />
+            </NavLink> 
             <ul>
                 <li>
-                    <a className="menu_items" href="home">Inicio</a>
+                    <NavLink to="/" className="menu_items" >Inicio</NavLink>
                 </li>
                 <li>
-                    <a className="menu_items" href="galeria">Galeria</a>
+                    <NavLink to="/category/MLA1246" className="menu_items" >Belleza </NavLink>
                 </li>
                 <li>
-                    <a className="menu_items" href="nosotros">Nosotros</a>
+                    <NavLink to="/category/MLA1430" className="menu_items" >Ropa y Accesorios</NavLink>
                 </li>
                 <li>
-                    <a className="menu_items" href="contacto">Contacto</a>
+                    <NavLink  to="/category/MLA3937" className="menu_items" >Joyas y Relojes</NavLink>
                 </li>
+                {/* <li>
+                    <NavLink activeClassName="active" className="menu_items" to="/about">Contacto</NavLink>
+                </li> */}
             </ul>
             <CartWidget/>
         </nav>
