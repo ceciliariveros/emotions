@@ -1,5 +1,6 @@
 .contenedor{
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 .cardItem{
@@ -10,4 +11,16 @@
 .imgCard{
     width: 200px;
     text-align: center;
+}
+.cantidadCarro{
+    margin: 10px !important;
+}
+
+.buttonCompra{
+    color: white;
+    padding: 10px 5px;
+    border-radius:8px ;
+    margin-right: 10px !important;
+    background-color: blue;
+
 }
