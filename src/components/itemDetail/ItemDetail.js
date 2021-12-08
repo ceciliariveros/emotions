@@ -1,5 +1,7 @@
 import React from 'react'
 import './ItemDetail.css'
+import ItemCount from '../ItemCount/ItemCount'
+
 
 const ItemDetail = ({item}) => {
     return (
@@ -8,6 +10,9 @@ const ItemDetail = ({item}) => {
                 <img className="imgCard" src={item.thumbnail} alt={item.title} width={350}></img>
                 <h4>$ {item.price}</h4>
                 <h3>{item.title}</h3>
+            </div>
+            <div>
+                <ItemCount></ItemCount>
             </div>
         </div>
     )

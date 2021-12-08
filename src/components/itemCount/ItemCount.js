@@ -20,8 +20,6 @@ export default function ItemCount() {
     }
     return (
         <div className="contenedorCouter" >
-
-            <h3 className="title">Remera Roja</h3>
             <p className="textP">Cantidad en el Carrito: {counter}</p>
             <div className="groupButton">
                 <button className="buttonAgregar" onClick={agregarAlCarrito} >Agregar al Carrito</button>

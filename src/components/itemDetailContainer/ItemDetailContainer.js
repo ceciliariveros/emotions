@@ -10,7 +10,7 @@ const ItemDetailContainer = () => {
 
    useEffect(() => {
      setTimeout(()=>{
-         fetch('https://api.mercadolibre.com/sites/MLA/search?category=MLA1574&limit=1')
+         fetch(`https://api.mercadolibre.com/items/${item.id}`)
          .then((response)=>response.json())
          .then((respJSON)=>{
              setItem(respJSON.results[0]);
